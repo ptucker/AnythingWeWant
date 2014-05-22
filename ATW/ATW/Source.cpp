@@ -5,5 +5,10 @@
 using namespace std;
 
 int main() {
+	Student mary;
+	Faculty beck;
 
+	mary.name = "Mary";
+	mary.id = 12345;
+	cout << mary.name << endl;
 }
