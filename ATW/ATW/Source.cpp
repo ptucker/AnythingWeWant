@@ -5,10 +5,12 @@
 using namespace std;
 
 int main() {
-	Student mary;
-	Faculty beck;
+	Student::SetIDPool(10000);
 
-	mary.name = "Mary";
-	mary.id = 12345;
-	cout << mary.name << endl;
+	Student mary, sue, mark, george;
+
+	cout << "Mary's ID: " << mary.getID() << endl;
+	cout << "Sue's ID: " << sue.getID() << endl;
+	cout << "Mark's ID: " << mark.getID() << endl;
+	cout << "George's ID: " << george.getID() << endl;
 }
